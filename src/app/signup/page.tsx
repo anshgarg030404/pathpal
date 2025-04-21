@@ -39,7 +39,8 @@ export default function SignUp() {
       });
       toast("✅ Sign Up Successful");
 
-      router.push("/login"); // Redirect to login page
+      router.push("/login"); // Redirect to login pag
+     // eslint-disable-next-line @typescript-eslint/no-explicit-anye
     } catch (error: any) {
       console.error("Error signing up:", error.message);
       toast("❌ " + error.message);

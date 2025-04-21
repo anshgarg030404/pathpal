@@ -3,8 +3,7 @@
 import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import { cn } from "@/lib/utils";
-import { auth } from "../../../firebase/clientApp"; // Import Firebase auth instance
-import { useAuthState } from "react-firebase-hooks/auth";
+
 
 function Avatar({ className, ...props }: React.ComponentProps<typeof AvatarPrimitive.Root>) {
   return (

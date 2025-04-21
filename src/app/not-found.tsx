@@ -20,7 +20,7 @@ export default function Custom404() {
             </div>
           </div>
           <p className="text-xl font-semibold mt-4">Page Not Found</p>
-          <p className="text-sm text-gray-500 mb-6">This page doesn't exist or was removed!<br />We suggest you go back to home</p>
+          <p className="text-sm text-gray-500 mb-6">This page doesn&apos;t exist or was removed!<br />We suggest you go back to home</p>
 
             <Link href="/">
               <button className="px-6 py-2 bg-[#2F4858] text-white font-semibold cursor-pointer rounded-full">Back to Home</button>
@@ -44,7 +44,7 @@ export default function Custom404() {
             </div>
           </div>
           <p className="text-xl font-semibold mt-6">Page Not Found</p>
-          <p className="text-sm text-gray-500 mb-6 text-center">This page doesn't exist or was removed!<br />We suggest you back to home</p>
+          <p className="text-sm text-gray-500 mb-6 text-center">This page doesn&apos;t exist or was removed!<br />We suggest you back to home</p>
 
             <Link href="/">
               <button className="px-5 py-2 bg-[#2F4858] text-white rounded-full">Back to Home</button>

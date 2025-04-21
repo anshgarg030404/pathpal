@@ -6,7 +6,7 @@ import { signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
+import {  Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "../lib/utils";
 import UserAvatar from "./userAvatar";
 
@@ -38,10 +38,11 @@ export default function NavbarDemo({ className }: { className?: string }) {
 
   return (
     <div
-      className={cn(
-        `fixed inset-x-0 top-0 z-50 transition-all duration-200 bg-black/50 backdrop-blur`,
-        className
-      )}
+  className={cn(
+    `fixed inset-x-0 top-0 z-50 transition-all duration-200`,
+    scrolled ? "bg-black/80 backdrop-blur-lg shadow-md" : "bg-transparent",
+    className
+  )}
     >
       <Menu setActive={setActive}>
         <div className="flex justify-between items-center w-full px-4 ">

@@ -9,12 +9,12 @@ export default function PathPalController() {
   const ESP32_URL = "http://192.168.4.1";
 
   // Function to send HTTP requests to ESP32
-  const sendCommand = async (command: any) => {
+  const sendCommand = async (command) => {
     try {
       const response = await fetch(`${ESP32_URL}/${command}`);
       const text = await response.text();
       setStatus(text); // Update status on UI
-    } catch (error) {
+    } catch {
       setStatus("Failed to connect. Ensure you're on ESP32 Wi-Fi.");
     }
   };

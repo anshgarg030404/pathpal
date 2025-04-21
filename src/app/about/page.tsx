@@ -1,6 +1,7 @@
 "use client";
 
 import { Team } from "@/components/team";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
               Reimagining the Way You Travel!{" "}
             </span>{" "}
             <br />
-            Travel is already tiring — your luggage shouldn't make it harder.
+            Travel is already tiring — your luggage shouldn&apos;t make it harder.
             The <span className="p-1 font-semibold bg-blue-100">
               Pathpal
             </span>{" "}
@@ -51,7 +52,7 @@ export default function About() {
           </ul>
           <p className="font-sans text-lg">
             <span className="font-bold text-xl">Our Vision</span> <br />
-             We're building a future where mobility meets intelligence
+             We&apos;re building a future where mobility meets intelligence
             — and where luggage is no longer a burden. From busy airports to
             massive malls, our mission is to transform how people interact with
             their luggage in crowded, high-traffic spaces. By combining smart
@@ -60,7 +61,7 @@ export default function About() {
           </p>
         </div>
         <div className="w-1/2 hidden lg:block">
-          <img
+          <Image
             src="https://media.istockphoto.com/id/454049847/photo/blank-billboard.jpg?b=1&s=612x612&w=0&k=20&c=29PusxAsNMcNASsXhgb47k0ImZf2cdEK-T79F4RP5hg="
             alt="white"
             className="size-full"

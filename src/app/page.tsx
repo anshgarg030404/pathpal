@@ -1,14 +1,14 @@
 "use client";
-import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 import { ContainerTextFlipDemo } from "@/components/container";
 import Steps from "@/components/howToUse";
-import { useRef } from "react";
+
 
 import ContactUs from "@/components/contactus";
 
 export default function Home() {
-  const router = useRouter();
+
 
   return (
     <>

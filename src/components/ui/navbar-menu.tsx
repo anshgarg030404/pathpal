@@ -81,7 +81,7 @@ export const ProductItem = ({
   title,
   description,
   href,
-  src,
+
 }: {
   title: string;
   description: string;
@@ -110,6 +110,7 @@ export const ProductItem = ({
 };
 
 export const HoveredLink = ({ children, ...rest }: any) => {
+
   return (
     <Link
       {...rest}

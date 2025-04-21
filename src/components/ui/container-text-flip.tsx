@@ -26,7 +26,7 @@ export function ContainerTextFlip({
 
   const updateWidthForWord = () => {
     if (textRef.current) {
-      // @ts-ignore
+      // @ts-expect-error: type mismatch between expected and actual return type
       const textWidth = textRef.current.scrollWidth + 30;
       setWidth(textWidth);
     }
