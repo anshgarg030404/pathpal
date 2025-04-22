@@ -9,7 +9,7 @@ export default function PathPalController() {
   const ESP32_URL = "http://192.168.4.1";
 
   // Function to send HTTP requests to ESP32
-  const sendCommand = async (command) => {
+  const sendCommand = async (command:any) => {
     try {
       const response = await fetch(`${ESP32_URL}/${command}`);
       const text = await response.text();
@@ -24,11 +24,11 @@ export default function PathPalController() {
       <h1 className="text-3xl font-bold mb-4">PathPal Trolley Control</h1>
       
       <div className="grid grid-cols-3 gap-4">
-        <button className="btn" onClick={() => sendCommand("moveForward")}>⬆ Forward</button>
-        <button className="btn" onClick={() => sendCommand("turnLeft")}>⬅ Left</button>
-        <button className="btn" onClick={() => sendCommand("turnRight")}>➡ Right</button>
-        <button className="btn" onClick={() => sendCommand("moveBackward")}>⬇ Backward</button>
-        <button className="btn stop" onClick={() => sendCommand("stop")}>⏹ Stop</button>
+        <button className="button" onClick={() => sendCommand("moveForward")}>⬆ Forward</button>
+        <button className="button" onClick={() => sendCommand("turnLeft")}>⬅ Left</button>
+        <button className="button" onClick={() => sendCommand("turnRight")}>➡ Right</button>
+        <button className="button" onClick={() => sendCommand("moveBackward")}>⬇ Backward</button>
+        <button className="button stop" onClick={() => sendCommand("stop")}>⏹ Stop</button>
       </div>
 
       <p className="mt-6 text-lg">Status: {status}</p>
